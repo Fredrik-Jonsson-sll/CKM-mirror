@@ -16,10 +16,10 @@ language
 
 description
 	original_author = <
+		["date"] = <"2022-03-30">
 		["name"] = <"Erik Sundvall">
 		["organisation"] = <"Karolinska University hospital + Institute & Linköping University, Sweden">
 		["email"] = <"erik.sundvall@regionstockholm.se">
-		["date"] = <"2022-03-30">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7b7af9bcd25679ee0f717a6a1b991447">
+		["MD5-CAM-1.0.1"] = <"267cde30fa305f63021c381312a9b550">
 		["build_uid"] = <"aeddd5fc-7634-3adb-b19b-5eaf6866ddef">
 	>
 
@@ -62,6 +62,11 @@ definition
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- pathological
 				value matches {
 					DV_BOOLEAN matches {*}
+				}
+			}
+			ELEMENT[at0007] occurrences matches {0..1} matches {    -- observer comment
+				value matches {
+					DV_TEXT matches {*}
 				}
 			}
 		}
@@ -94,6 +99,10 @@ SG12.OBR..C502.6155 (Measurement attribute, coded)">
 					description = <"The incoming (not mapped) Test method identification  code 
 ">
 				>
+				["at0007"] = <
+					text = <"observer comment">
+					description = <"">
+				>
 			>
 		>
 		["sv"] = <
@@ -120,6 +129,10 @@ SG12.OBR..C502.6155 (Measurement attribute, coded) (en)">
 					text = <"testmetod">
 					description = <"*The incoming (not mapped) Test method identification  code 
  (en)">
+				>
+				["at0007"] = <
+					text = <"analyskommentar">
+					description = <"">
 				>
 			>
 		>
